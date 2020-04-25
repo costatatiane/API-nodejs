@@ -1,6 +1,20 @@
+const UsersModel = require('../model/Users');
+const usersModel = new UsersModel();
+
 class Users {
     get (req, res) {
-        res.send(`Eu recebi o parâmetro ${req.params.id}`);
+        const {id} = req.params;
+
+        usersModel.get(id)
+            .then((user) => {
+                if (!user.exists) {
+                    res.status(404).send({message: 'User not found'});
+                }
+                res.json(user.data());
+            })
+            .catch((error) => {
+                res.status(500).send(error);
+            });
     }
 }
 
