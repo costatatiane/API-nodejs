@@ -11,6 +11,14 @@ class Users extends BaseModel{
             .doc(id)
             .get();
     }
+
+    getBy(email, password) {
+        return this.db
+            .collection('users')
+            .where('email', '==', email)
+            .where('password', '==', password)
+            .get();
+    }
 }
 
 module.exports = Users;
