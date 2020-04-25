@@ -1,6 +1,8 @@
-const createToken = require('../utils/createToken');
 const UsersModel = require('../model/Users');
 const usersModel = new UsersModel();
+
+const createToken = require('../utils/createToken');
+const cryptoPassword = require('../utils/cryptoPassword');
 
 class Auth {
     validate(req, res) {
@@ -8,7 +10,7 @@ class Auth {
         
         const conditions = [
             { field: 'email', operator: '==', value: email },
-            { field: 'password', operator: '==', value: password }
+            { field: 'password', operator: '==', value: cryptoPassword(password) }
         ];
 
         usersModel.getBy(conditions)

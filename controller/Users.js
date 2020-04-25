@@ -1,8 +1,10 @@
 const UsersModel = require('../model/Users');
 const usersModel = new UsersModel();
 
+const cryptoPassword = require('../utils/cryptoPassword');
+
 class Users {
-    get (req, res, next) {
+    get (req, res) {
         const {id} = req.params;
 
         usersModel.get(id)
@@ -18,10 +20,16 @@ class Users {
     }
 
     create (req, res) {
-        usersModel.create(req.body)
-            .then(user => {
-                res.send({
-                    ...req.body,
+        const data = {
+            ...req.body,
+            password: cryptoPassword(req.body.password),
+        }
+        usersModel.create(data)
+            .then((user) => {
+                delete data.password;
+                
+                res.status(201).send({
+                    ...data,
                     id: user.id,
                 });
             })
