@@ -1,8 +1,12 @@
 const express = require('express');
+
+//instância do router
 const router = express.Router();
 
-router.get('/:id', (req, res) => {
-    res.send(`Eu recebi o parâmetro ${req.params.id}`);
-});
+// import e instância da controler
+const Users = require('../controller/Users');
+const usersController = new Users();
+
+router.get('/:id', (usersController.get));
 
 module.exports = router;
