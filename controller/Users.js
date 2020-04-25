@@ -2,7 +2,7 @@ const UsersModel = require('../model/Users');
 const usersModel = new UsersModel();
 
 class Users {
-    get (req, res) {
+    get (req, res, next) {
         const {id} = req.params;
 
         usersModel.get(id)
