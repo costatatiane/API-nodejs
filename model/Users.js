@@ -12,12 +12,25 @@ class Users extends BaseModel{
             .get();
     }
 
-    getBy(email, password) {
+    getBy(conditions) {
+        let db = this.db.collection('users');
+
+        conditions.forEach(({ field, operator , value }) => 
+            db = db.where(field, operator, value)
+        );
+
+        return db.get();
+    }
+
+    create(user) {
+        return this.db.collection('users').add(user);
+    }
+
+    delete(id) {
         return this.db
             .collection('users')
-            .where('email', '==', email)
-            .where('password', '==', password)
-            .get();
+            .doc(id)
+            .delete();
     }
 }
 
