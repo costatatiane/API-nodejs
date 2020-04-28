@@ -7,6 +7,15 @@ const cryptoPassword = require('../utils/cryptoPassword');
 class Auth {
     validate(req, res) {
         const { email, password } = req.body;
+
+        if (!email || !password) {
+            return res
+                .status(400)
+                .send({
+                    code: 'bad_request',
+                    message: 'Bad Request'
+                });
+        }
         
         const conditions = [
             { field: 'email', operator: '==', value: email },
@@ -15,15 +24,15 @@ class Auth {
 
         usersModel.getBy(conditions)
             .then(users => {
-                if(users.docs.length === 0) {
-                    return response
+                if (users.docs.length === 0) {
+                    return res
                         .status(401)
-                        .send({ 
+                        .send({
                             code: 'not_found',
                             message: 'User not found'
                         });
                 }
-                res.send({token: createToken({ id: users.docs[0].id})});
+                res.send({ token: createToken({ id: users.docs[0].id }) });
             })
             .catch(error => res.status(500).send(error));
     }
