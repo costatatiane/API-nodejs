@@ -12,9 +12,7 @@ class Products {
                 }
                 res.json(product.data());
             })
-            .catch((error) => {
-                res.status(500).send(error);
-            });
+            .catch(error => res.status(500).send(error));
     }
 
     create (req, res) {

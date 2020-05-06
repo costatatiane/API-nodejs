@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1588035477580" clover="3.2.0">
-  <project timestamp="1588035477580" name="All files">
-    <metrics statements="103" coveredstatements="77" conditionals="13" coveredconditionals="7" methods="22" coveredmethods="8" elements="138" coveredelements="92" complexity="0" loc="103" ncloc="103" packages="7" files="13" classes="13"/>
+<coverage generated="1588796015444" clover="3.2.0">
+  <project timestamp="1588796015445" name="All files">
+    <metrics statements="145" coveredstatements="101" conditionals="15" coveredconditionals="9" methods="40" coveredmethods="11" elements="200" coveredelements="121" complexity="0" loc="145" ncloc="145" packages="7" files="16" classes="16"/>
     <package name="API-nodejs">
       <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="server.js" path="/Users/Easydeco/Desktop/Tatiane/FIAP/APIs_Nodejs/API-nodejs/server.js">
@@ -19,7 +19,7 @@
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="default.js" path="/Users/Easydeco/Desktop/Tatiane/FIAP/APIs_Nodejs/API-nodejs/config/default.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
       </file>
       <file name="firebase.js" path="/Users/Easydeco/Desktop/Tatiane/FIAP/APIs_Nodejs/API-nodejs/config/firebase.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -28,7 +28,7 @@
       </file>
     </package>
     <package name="API-nodejs.controller">
-      <metrics statements="32" coveredstatements="17" conditionals="8" coveredconditionals="6" methods="11" coveredmethods="2"/>
+      <metrics statements="53" coveredstatements="20" conditionals="10" coveredconditionals="6" methods="23" coveredmethods="2"/>
       <file name="Auth.js" path="/Users/Easydeco/Desktop/Tatiane/FIAP/APIs_Nodejs/API-nodejs/controller/Auth.js">
         <metrics statements="14" coveredstatements="13" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
@@ -46,8 +46,29 @@
         <line num="37" count="0" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
       </file>
+      <file name="Products.js" path="/Users/Easydeco/Desktop/Tatiane/FIAP/APIs_Nodejs/API-nodejs/controller/Products.js">
+        <metrics statements="18" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="10" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+      </file>
       <file name="Users.js" path="/Users/Easydeco/Desktop/Tatiane/FIAP/APIs_Nodejs/API-nodejs/controller/Users.js">
-        <metrics statements="18" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="8" coveredmethods="0"/>
+        <metrics statements="21" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="10" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -56,48 +77,61 @@
         <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="13" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
         <line num="40" count="0" type="stmt"/>
         <line num="42" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="48" count="1" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
       </file>
     </package>
     <package name="API-nodejs.middlewares">
-      <metrics statements="12" coveredstatements="4" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <metrics statements="12" coveredstatements="9" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="verifyToken.js" path="/Users/Easydeco/Desktop/Tatiane/FIAP/APIs_Nodejs/API-nodejs/middlewares/verifyToken.js">
-        <metrics statements="12" coveredstatements="4" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="7" count="0" type="cond" truecount="0" falsecount="2"/>
+        <metrics statements="12" coveredstatements="9" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="8" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="16" count="0" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="1" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
       </file>
     </package>
     <package name="API-nodejs.model">
-      <metrics statements="15" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="4"/>
+      <metrics statements="23" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="5"/>
       <file name="BaseModel.js" path="/Users/Easydeco/Desktop/Tatiane/FIAP/APIs_Nodejs/API-nodejs/model/BaseModel.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
       </file>
+      <file name="Products.js" path="/Users/Easydeco/Desktop/Tatiane/FIAP/APIs_Nodejs/API-nodejs/model/Products.js">
+        <metrics statements="7" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+      </file>
       <file name="Users.js" path="/Users/Easydeco/Desktop/Tatiane/FIAP/APIs_Nodejs/API-nodejs/model/Users.js">
-        <metrics statements="10" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="3"/>
+        <metrics statements="11" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
         <line num="5" count="2" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
@@ -107,11 +141,12 @@
         <line num="22" count="2" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
       </file>
     </package>
     <package name="API-nodejs.routes">
-      <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="35" coveredstatements="35" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="auth.js" path="/Users/Easydeco/Desktop/Tatiane/FIAP/APIs_Nodejs/API-nodejs/routes/auth.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
@@ -122,17 +157,19 @@
         <line num="12" count="1" type="stmt"/>
       </file>
       <file name="index.js" path="/Users/Easydeco/Desktop/Tatiane/FIAP/APIs_Nodejs/API-nodejs/routes/index.js">
-        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
       </file>
-      <file name="users.js" path="/Users/Easydeco/Desktop/Tatiane/FIAP/APIs_Nodejs/API-nodejs/routes/users.js">
-        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="products.js" path="/Users/Easydeco/Desktop/Tatiane/FIAP/APIs_Nodejs/API-nodejs/routes/products.js">
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
@@ -141,7 +178,21 @@
         <line num="13" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+      <file name="users.js" path="/Users/Easydeco/Desktop/Tatiane/FIAP/APIs_Nodejs/API-nodejs/routes/users.js">
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
       </file>
     </package>
     <package name="API-nodejs.utils">

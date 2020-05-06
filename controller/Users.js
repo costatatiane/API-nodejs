@@ -14,9 +14,7 @@ class Users {
                 }
                 res.json(user.data());
             })
-            .catch((error) => {
-                res.status(500).send(error);
-            });
+            .catch(error => res.status(500).send(error));
     }
 
     create (req, res) {
