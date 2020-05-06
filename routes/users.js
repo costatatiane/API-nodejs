@@ -12,6 +12,7 @@ const usersController = new Users();
 
 router.get('/:id', verifyToken, (usersController.get));
 router.post('/', verifyToken, (usersController.create));
+router.put('/:id', verifyToken, (usersController.update));
 router.delete('/:id', verifyToken, (usersController.delete));
 
 module.exports = router;

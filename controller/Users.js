@@ -36,6 +36,14 @@ class Users {
             .catch(error => res.status(500).send(error));
     }
 
+    update (req, res) {
+        const {id} = req.params;
+
+        usersModel.update(id, req.body)
+            .then(res.status(200).send({message: 'Updated user', product: req.body}))
+            .catch(error => res.status(500).send(error));
+    }
+
     delete (req, res) {
         const {id} = req.params;
 

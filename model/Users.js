@@ -26,6 +26,13 @@ class Users extends BaseModel{
         return this.db.collection('users').add(user);
     }
 
+    update(id, user) {
+        return this.db
+            .collection('users')
+            .doc(id)
+            .update(user);
+    }
+
     delete(id) {
         return this.db
             .collection('users')
