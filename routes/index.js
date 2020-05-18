@@ -13,4 +13,7 @@ router.use('/users', users);
 router.use('/auth', auth);
 router.use('/products', products);
 
+// rota 404
+router.use('*', (_, res) => res.status(404).send('Error 404 - Not found'));
+
 module.exports = router;
